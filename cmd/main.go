@@ -3,7 +3,6 @@ package main
 import (
 	"go-sdk-example/book"
 	bookingManagment "go-sdk-example/bookingmanagment"
-	guestAndLoyalty "go-sdk-example/guestAndLoyalty"
 	"go-sdk-example/search"
 	staticData "go-sdk-example/staticdata"
 
@@ -22,7 +21,7 @@ func main() {
 	r.GET("/iataCodes", staticData.GetIataCode)
 
 	//--------search--------------
-	r.GET("/minRate", search.GetMinimumRates)
+	//r.GET("/minRate", search.GetMinimumRates)
 	r.GET("/fullRate", search.GetFullRates)
 
 	//--------book--------------
@@ -35,7 +34,7 @@ func main() {
 	r.GET("/cancel", bookingManagment.BookingCancel)
 
 	//--------guestAndLoyalty--------------
-	r.GET("/guestsIds", guestAndLoyalty.GetGuestsIds)
+//	r.GET("/guestsIds", guestAndLoyalty.GetGuestsIds)
 
 	r.Run()
 }

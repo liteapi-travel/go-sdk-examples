@@ -8,8 +8,7 @@ import (
 
 	"github.com/gin-gonic/gin"
 )
-
-func GetMinimumRates(c *gin.Context) {
+/* func GetMinimumRates(c *gin.Context) {
 	hotelIds := "lp3803c,lp1f982,lp19b70,lp19e75"
 	checkin := "2023-11-15"
 	checkout := "2023-11-16"
@@ -23,12 +22,11 @@ func GetMinimumRates(c *gin.Context) {
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", res)
 	}
 	c.JSON(200, result)
-}
-
+} */
 func GetFullRates(c *gin.Context) {
 	hotelIds := "lp3803c,lp1f982,lp19b70,lp19e75"
-	checkin := "2023-11-15"
-	checkout := "2023-11-16"
+	checkin := "2024-12-15"
+	checkout := "2024-12-16"
 	currency := "USD"
 	guestNationality := "US"
 	adults := int32(1)
